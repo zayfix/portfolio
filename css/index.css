@@ -22,7 +22,7 @@ nav a {
 
 /* HOME */
 
-#content {
+#home {
     min-width: 100vh;
     height: 100vh;
     display: grid;
@@ -61,6 +61,8 @@ nav a {
     animation-name: fadeIn;
     mix-blend-mode: difference;
     cursor: default;
+    width: 100%;
+    text-align: center;
 }
 
 #name-image>h3 {
@@ -142,7 +144,6 @@ nav a {
     height: 85vh;
     display: grid;
     grid-template-columns: 0.10fr 1fr 0.10fr;
-    grid-template-rows: 1fr;
     gap: 1em;
     padding-top: 30px;
 }
@@ -412,7 +413,6 @@ li.terminal:after {
 
 #contact {
     min-width: 100vh;
-    height: 85vh;
     display: grid;
     grid-template-columns: 0.10fr 1fr 0.10fr;
     grid-template-rows: 1fr;
@@ -443,6 +443,85 @@ li.terminal:after {
     color: white;
 }
 
+.input-field .prefix.active {
+    color: white !important;
+}
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid white !important;
+    box-shadow: 0 1px 0 0 white !important;
+}
+
+.input-field input[type=text]:focus+label {
+    color: white !important;
+}
+
+.input-field textarea[type=text]:focus {
+    border-bottom: 1px solid white !important;
+    box-shadow: 0 1px 0 0 white !important;
+}
+
+.input-field textarea[type=text]:focus+label {
+    color: white !important;
+}
+
+.input-field input[type=email]:focus {
+    border-bottom: 1px solid white !important;
+    box-shadow: 0 1px 0 0 white !important;
+}
+
+.input-field input[type=email]:focus+label {
+    color: white !important;
+}
+
+.input-field input[type=tel]:focus {
+    border-bottom: 1px solid white !important;
+    box-shadow: 0 1px 0 0 white !important;
+}
+
+.input-field input[type=tel]:focus+label {
+    color: white !important;
+}
+
 footer {
     text-align: center;
+}
+
+/* RESPONSIVENESS */
+
+@media only screen and (min-device-width:768px) and (max-device-width:1080px) {
+    #skills {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.25fr 0.25fr 0.25fr 0.25fr;
+    }
+
+    #frontend {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        border: transparent;
+    }
+
+    #backend {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        border: transparent;
+    }
+
+    #os {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        border: transparent;
+    }
+
+    #devtools {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        border: transparent;
+    }
+
+    #projects-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
 }
