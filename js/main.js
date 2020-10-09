@@ -26,6 +26,7 @@ function darkmode() {
     document.getElementById("about").classList.toggle("dark-mode");
     document.getElementById("projects").classList.toggle("dark-mode");
     document.getElementById("contact").classList.toggle("dark-mode");
+    document.getElementById("scroll-down").classList.toggle("dark-mode-scroll");
     document.querySelector("footer").classList.toggle("dark-mode");
     document.querySelector("footer > p").classList.toggle("dark-mode");
 }
