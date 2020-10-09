@@ -423,24 +423,11 @@ li.terminal:after {
 
 /* CONTACT */
 
-#contact {
-    min-width: 100vh;
-    display: grid;
-    grid-template-columns: 0.10fr 1fr 0.10fr;
-    grid-template-rows: 1fr;
-    gap: 1em;
-    padding-top: 30px;
-}
-
 #contact-text {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    position: relative;
     text-align: center;
-    background-color: #323232;
-    background-image: url("../img/raster.png");
+    background-color: transparent;
     color: white;
-    margin: 20px;
+    padding: 20px;
 }
 
 #submit-contact {
@@ -449,6 +436,10 @@ li.terminal:after {
 
 #submit-contact:hover {
     background-color: #367fdfad !important;
+}
+
+.btn-large {
+    background-color: #367edf !important;
 }
 
 .input-field {
