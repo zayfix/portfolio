@@ -10,6 +10,10 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+nav {
+    color: black !important;
+}
+
 nav a {
     color: black !important;
     font-size: 20px;
@@ -21,6 +25,14 @@ nav a {
 }
 
 /* HOME */
+
+#top>nav>div>ul>li:before {
+    background-color: transparent;
+}
+
+#top>nav>div>ul>li:after {
+    background-color: transparent;
+}
 
 #home {
     min-width: 100vh;
@@ -487,6 +499,11 @@ footer {
     text-align: center;
 }
 
+footer>p {
+    margin: 0;
+    padding: 15px 0px 15px 0px;
+}
+
 /* RESPONSIVENESS */
 
 @media only screen and (max-device-width:992px) {
@@ -534,4 +551,19 @@ footer {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
+}
+
+/* Dark mode */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode-grid {
+    grid-template-columns: 1fr !important;
+}
+
+.dark-mode-image {
+    grid-column: 1/2 !important;
+    margin: 0 !important;
 }
