@@ -19,6 +19,14 @@ nav a {
     font-size: 20px;
 }
 
+nav ul i {
+    padding: 0 15px;
+}
+
+nav ul i:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
 .nav-wrapper>a,
 .nav-wrapper>ul {
     margin: 0 20px 0 20px;
@@ -508,6 +516,10 @@ footer>p {
 
     #name-image>h1 {
         font-size: 6.2rem;
+    }
+
+    nav a {
+        font-size: 28px !important;
     }
 
     #name-image {
